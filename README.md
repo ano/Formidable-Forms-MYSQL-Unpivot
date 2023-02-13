@@ -43,11 +43,11 @@ FROM
   entry_data
 WHERE form_id =  @form_id;
 SET @sql = CONCAT('
-							SELECT item_id, ', @sql, ' 
-              FROM entry_data 
-							WHERE form_id = ', @form_id, '
-              GROUP BY item_id
-							');
+		SELECT item_id, ', @sql, ' 
+		FROM entry_data 
+		WHERE form_id = ', @form_id, '
+		GROUP BY item_id
+	');
 
 PREPARE stmt FROM @sql;
 EXECUTE stmt;
