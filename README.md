@@ -1,7 +1,7 @@
 # Formidable-Forms-MYSQL-Unpivot
 Here is how to Unpivot the data that is entered into Formidable Forms in MySQL
 
-# Step 1: Create a View called ***entry_data***
+# Step 1: Create a View called entry_data
 
 ```sql
 CREATE OR REPLACE VIEW `entry_data` AS
@@ -25,7 +25,7 @@ CREATE OR REPLACE VIEW `entry_data` AS
 
 ```
 
-# Step 2: Unpivot the ***entry_data*** view
+# Step 2: Unpivot the entry_data view
 
 ```sql
 SET @sql = NULL;
